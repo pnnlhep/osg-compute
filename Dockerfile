@@ -1,4 +1,4 @@
-FROM kfox1111/osg-base
+FROM pnnlhep/osg-base
 MAINTAINER Malachi Schram "malachi.schram@pnnl.gov"
 
 RUN yum install -y centos-release-SCL
