@@ -1,3 +1,5 @@
 #!/bin/bash -e
-/bin/bash 
+
+. /etc/sysconfig/condor
+condor_master -f 
 
