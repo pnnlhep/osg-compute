@@ -8,3 +8,4 @@ while true; do
 	sleep 1
 done
 condor_off
+condor_off -daemon master
