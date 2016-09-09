@@ -15,3 +15,4 @@ if [ "x$START_WAIT_DONE_FILE" != "x" ]; then
 	touch "$START_WAIT_DONE_FILE"
 fi
 wait $pid
+[ -x /etc/shutdown.sh ] && /etc/shutdown.sh
