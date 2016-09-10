@@ -7,7 +7,7 @@ if [ "x$START_WAIT_FILE" != "x" ]; then
 	done
 fi
 . /etc/sysconfig/condor
-condor_master -f
+exec condor_master -f
 ) & pid=$!
 trap "kill $pid" TERM
 echo $pid > /var/run/condor_master.pid
